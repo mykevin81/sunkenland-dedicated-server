@@ -3,14 +3,19 @@ Sunkenland Dedicated Server is a Docker Container.
 This project is forked from [adrianhowchin/sunkenland](https://github.com/adrianhowchin/sunkenland).
 
 # Table of Contents
-
----
-
+* [Basic Docker Usage](#basic-docker-usage)
+   *[World setup](#world-setup)
+   *[Docker run command](#docker-run-command)
+* [Environment Variables](#environment-variables)
+   *[Docker Environment Variables](#docker-environment-variables)
+   *[Region Code Table](#region-code-table)
+* [Misc Notes](misc-notes)
+   *[User Manual](#user-manual)
+  
 # Basic Docker Usage
 
----
-
-### World setup (must be done before docker run)
+### World setup
+**must be done before docker run**
 Currently, there is no way to generate a world on server start, so we need to generate a world in the game itself and mount to container.
 1. Move/Copy the world file and make a note of it
     >The world file is located in `C:\Users\<USER_NAME>\AppData\LocalLow\Vector3 Studio\Sunkenland\Worlds`
@@ -35,8 +40,6 @@ $ docker run -d \
 ```
 
 # Environment Variable
-
----
 
 **All variable names and values are case-sensitive!**
 
@@ -64,7 +67,5 @@ $ docker run -d \
 | USA, West | usw |
 
 # Misc Notes
-
- ---
  ### User Manual
 Official User manual can be downloaded [here](https://download-files.wixmp.com/ugd/36e0da_671cc93711c54abb91a25823df0aa548.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YXBwOmU2NjYzMGU3MTRmMDQ5MGFhZWExZjE0OWIzYjY5ZTMyIiwic3ViIjoidXJuOmFwcDplNjY2MzBlNzE0ZjA0OTBhYWVhMWYxNDliM2I2OWUzMiIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sImlhdCI6MTcwOTE4MTk4NCwiZXhwIjoxNzA5MjE3OTk0LCJqdGkiOiI2ZmY3YWZjNi0yYTA2LTRiMDEtODE1MC1mMGNhY2IxOTQwM2UiLCJvYmoiOltbeyJwYXRoIjoiL3VnZC8zNmUwZGFfNjcxY2M5MzcxMWM1NGFiYjkxYTI1ODIzZGYwYWE1NDgucGRmIn1dXSwiZGlzIjp7ImZpbGVuYW1lIjoiU3Vua2VubGFuZCBEZWRpY2F0ZWQgU2VydmVyIE1hbnVhbCAoU3RlYW0pIDIwMjQwMjAyLnBkZiIsInR5cGUiOiJhdHRhY2htZW50In19.0iRcV48NaO9cDFj7d6Sl2Ip1XuX6nvqTSYA3vSMbV8s)
