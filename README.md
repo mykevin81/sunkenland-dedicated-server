@@ -16,6 +16,7 @@ This project is forked from [adrianhowchin/sunkenland](https://github.com/adrian
 
 ### World setup
 **must be done before docker run**
+
 Currently, there is no way to generate a world on server start, so we need to generate a world in the game itself and mount to container.
 1. Move/Copy the world file and make a note of it
     >The world file is located in `C:\Users\<USER_NAME>\AppData\LocalLow\Vector3 Studio\Sunkenland\Worlds`
@@ -26,6 +27,8 @@ Currently, there is no way to generate a world on server start, so we need to ge
 3.  Volume mount the server World directory to `/opt/sunkenland/` in the Docker container.
 
 ### Docker run command
+The name of the Docker image is `mykevin81/sunkenland-dedicated-server`.
+
 Here is an example of the docker run command
 ```bash
 $ docker run -d \
