@@ -22,11 +22,15 @@ RUN apt install steamcmd -y; ln -s /usr/games/steamcmd /usr/bin/steamcmd
 # Now that we have Steamcmd installed, install the Sunkenland Dedicated Server from Steam
 RUN steamcmd +login anonymous +@sSteamCmdForcePlatformType windows +app_update 2667530 validate +quit
 
-# Copy in the server start script
+# Copy in the server scripts
 COPY server_start.sh .
+COPY common.sh .
+RUN ["chmod", "+x", "/opt/sunkenland/server_start.sh"]
+RUN ["chmod", "+x", "/opt/sunkenland/common.sh"]
 
-# The command that runs on containr start
-CMD /opt/sunkenland/server_start.sh
 
 # Make sure you setup port forwarding on your router for port 27015 (if required)
 EXPOSE 27015
+
+# The command that runs on containr start
+ENTRYPOINT ["/bin/bash", "-C", "/opt/sunkenland/server_start.sh"]
