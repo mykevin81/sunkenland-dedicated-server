@@ -4,13 +4,13 @@ This project is forked from [adrianhowchin/sunkenland](https://github.com/adrian
 
 # Table of Contents
 * [Basic Docker Usage](#basic-docker-usage)
-   *[World setup](#world-setup)
-   *[Docker run command](#docker-run-command)
+   * [World setup](#world-setup)
+   * [Docker run command](#docker-run-command)
 * [Environment Variables](#environment-variables)
-   *[Docker Environment Variables](#docker-environment-variables)
-   *[Region Code Table](#region-code-table)
+   * [Docker Environment Variables](#docker-environment-variables)
+   * [Region Code Table](#region-code-table)
 * [Misc Notes](misc-notes)
-   *[User Manual](#user-manual)
+   * [User Manual](#user-manual)
   
 # Basic Docker Usage
 
