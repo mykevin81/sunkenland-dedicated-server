@@ -29,5 +29,5 @@ echo "Xfvb server start at :1"
 
 # Start the Sunkenland server
 cd "/root/Steam/steamapps/common/Sunkenland Dedicated Server"
-info "Starting Sunkenland dedicated server."
-wine Sunkenland-DedicatedServer.exe -nographics -batchmode -logFile /opt/sunkenland/Worlds/sunkenland.log -maxPlayerCapacity ${MAX_PLAYER_CAPACITY} -password ${PASSWORD} -worldGuid ${GUID} -region ${REGION}
+info "Starting Sunkenland dedicated server. World GUID: ${WORLD_GUID}, Password: ${PASSWORD}, Region: ${REGION}, Session Invisible: ${MAKE_SESSION_INVISIBLE}, Max player: ${MAX_PLAYER_CAPACITY}"
+wine Sunkenland-DedicatedServer.exe -nographics -batchmode  -logFile /opt/sunkenland/Worlds/sunkenland.log -maxPlayerCapacity ${MAX_PLAYER_CAPACITY} -password ${PASSWORD} -worldGuid ${GUID} -region ${REGION} -port 27015
